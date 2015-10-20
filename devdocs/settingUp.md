@@ -15,8 +15,8 @@ Important: When a version is specified, please install that version instead of t
    Instructions are at https://developers.google.com/eclipse/docs/install-eclipse-4.4 <br>
    Note: Sometimes the update site for the GAE plug-in does not work. In which case, 
    follow the instructions at https://developers.google.com/eclipse/docs/install-from-zip.
-7. Install Google App Engine SDK version 1.9.4 (this is not the latest version)<br>
-   Download link to the SDK is https://console.developers.google.com/m/cloudstorage/b/appengine-sdks/o/deprecated/194/appengine-java-sdk-1.9.4.zip.<br>
+7. Install Google App Engine SDK version 1.9.27 (latest release as at 20th October 2015)<br>
+   Download link to the SDK is http://central.maven.org/maven2/com/google/appengine/appengine-java-sdk/1.9.27/appengine-java-sdk-1.9.27.zip.<br>
    Go to `Window → Preferences → Google → App Engine`, click the `Add` button,
    and point it to where you extracted the SDK zip file. <br>
    Further instructions for installing can be found at https://developers.google.com/eclipse/docs/using_sdks.
@@ -170,12 +170,12 @@ this section.
 * Open a DOS window in the project folder and run the `runtests.bat` 
   in the following manner.<br>
   `runtests.bat  appengine_SDK_location  project_folder_location` <br>
-  e.g. `runtests.bat  C:\appengine-java-sdk-1.9.4  C:\teammates`<br>
+  e.g. `runtests.bat  C:\appengine-java-sdk-1.9.27  C:\teammates`<br>
   This will run the full test suite once and retry the failed tests several times.
 * The final result can be viewed by opening `[project folder]/testrunner/test-output/index.html`.
 * To run only certain `<test>` segments of the `testng.xml`, add the `-testnames`
   option followed by the names of the `<test>` segments you want to run.<br>e.g.
-  `runtests.bat  C:\appengine-java-sdk-1.9.4  C:\teammates -testnames component-tests,sequential-ui-tests,parallel-ui-tests`
+  `runtests.bat  C:\appengine-java-sdk-1.9.27  C:\teammates -testnames component-tests,sequential-ui-tests,parallel-ui-tests`
 
 **On OS-X:**
 TBD
@@ -221,7 +221,7 @@ Troubleshooting instructions are given [in this document](https://docs.google.co
 ####Development environment
 * **Eclipse** IDE for EE developers [version Luna]
 * **Google App Engine Plugin for Eclipse** [version 4.4]
-* **Google App Engine SDK** [version 1.9.4]
+* **Google App Engine SDK** [version 1.9.27]
 * **GitHub** : Used to host the repo and code reviewing.
 * [**PowerPointLabs**](http://PowerPointLabs.info) [Sister project]: Used for creating demo videos.
 * Optional: [**HubTurbo**](https://github.com/HubTurbo/HubTurbo/wiki/Getting-Started) [Sister project]: 
